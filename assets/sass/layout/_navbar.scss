@@ -1,0 +1,73 @@
+header {
+    height: 115px;
+}
+.navContainer {
+    height: 100%;
+    width: 68%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBrand {
+    width: 212px;
+    height: 25px;
+}
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border: 1px solid red;
+    gap: 50px;
+    *{
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #1b1b1b;
+    }
+}
+nav>ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border: 1px solid green;
+    gap: 60px;
+    li{
+        letter-spacing: 1px;
+        position: relative;
+        .nav_li_line{
+            position: absolute;
+            height: 1px;
+            width: 0%;
+            background-color: black;
+            bottom: -1px;
+            transition: 300ms;
+            transition-timing-function: linear;
+        }
+        &:hover{
+            .nav_li_line{
+                width: 100%;
+                background-color: black;
+            }
+        }
+        .nav_li_line.active{
+            width: 100%;
+            background-color: black;
+        }
+    }
+}
+.nav_chartBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    letter-spacing: 3px;
+    .fa-magnifying-glass{
+        font-size: 19px;
+    }
+    .fa-bag-shopping{
+        font-size: 21px;
+    }
+}

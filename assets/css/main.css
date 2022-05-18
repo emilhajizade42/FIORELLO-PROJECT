@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+a, ul {
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover, ul:hover {
+  color: black;
+}
+
+.adsa {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  height: 115px;
+}
+
+.navContainer {
+  height: 100%;
+  width: 68%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navBrand {
+  width: 212px;
+  height: 25px;
+}
+
+nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+nav * {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+
+nav > ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+
+nav > ul li {
+  letter-spacing: 1px;
+  position: relative;
+}
+
+nav > ul li .nav_li_line {
+  position: absolute;
+  height: 1px;
+  width: 0%;
+  background-color: black;
+  bottom: -1px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+nav > ul li:hover .nav_li_line {
+  width: 100%;
+  background-color: black;
+}
+
+nav > ul li .nav_li_line.active {
+  width: 100%;
+  background-color: black;
+}
+
+.nav_chartBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  letter-spacing: 3px;
+}
+
+.nav_chartBox .fa-magnifying-glass {
+  font-size: 19px;
+}
+
+.nav_chartBox .fa-bag-shopping {
+  font-size: 21px;
+}
+/*# sourceMappingURL=main.css.map */
