@@ -1,10 +1,14 @@
 header {
     height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navContainer {
     height: 100%;
-    width: 68%;
-    margin: 0 auto;
+    max-width: 1300px;
+    width: 1300px;
+    margin: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +23,7 @@ nav {
     justify-content: center;
     align-items: center;
     //border: 1px solid red;
-    gap: 50px;
+    gap: 27px;
     *{
         font-size: 12px;
         font-family: 'Montserrat', sans-serif;
@@ -33,17 +37,26 @@ nav>ul{
     justify-content: center;
     align-items: center;
     //border: 1px solid green;
-    gap: 60px;
+    gap: 27px;
     li{
-        letter-spacing: 1px;
         position: relative;
+        padding: 0 15px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 1px;
+        cursor: pointer;
+        a{
+            position: relative;
+        }
         .nav_li_line{
             position: absolute;
             height: 1px;
             width: 0%;
             background-color: black;
             bottom: -1px;
-            transition: 300ms;
+            transition: 150ms;
             transition-timing-function: linear;
         }
         &:hover{
@@ -62,12 +75,52 @@ nav>ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 27px;
     letter-spacing: 3px;
     .fa-magnifying-glass{
         font-size: 19px;
+        cursor: pointer;
+        transition: 200ms;
+        transition-timing-function: linear;
+        &:hover{
+            color: #f34f3f;
+        }
     }
     .fa-bag-shopping{
+        cursor: pointer;
         font-size: 21px;
+    }
+}
+.chart_value{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+.chard_value_text{
+
+}
+.chard_value_price{
+
+}
+// nav hover menues
+.nav_home{
+    position: relative;
+    .nav_dropdown{
+        position: absolute;
+        background-color: gray;
+        top: 115px;
+        left: 0px;
+        width: 210px;
+        height: 400px;
+        visibility: hidden;
+    }
+    &:hover{
+        display: block;
+        display: flex;
+        align-items: center;
+        .nav_dropdown{
+            visibility: visible;
+        }
+
     }
 }

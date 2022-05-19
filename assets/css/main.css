@@ -18,12 +18,22 @@ a:hover, ul:hover {
 
 header {
   height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navContainer {
   height: 100%;
-  width: 68%;
-  margin: 0 auto;
+  max-width: 1300px;
+  width: 1300px;
+  margin: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,7 +61,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
+  gap: 27px;
 }
 
 nav * {
@@ -72,11 +82,27 @@ nav > ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 60px;
+  gap: 27px;
 }
 
 nav > ul li {
+  position: relative;
+  padding: 0 15px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 1px;
+  cursor: pointer;
+}
+
+nav > ul li a {
   position: relative;
 }
 
@@ -86,8 +112,8 @@ nav > ul li .nav_li_line {
   width: 0%;
   background-color: black;
   bottom: -1px;
-  -webkit-transition: 300ms;
-  transition: 300ms;
+  -webkit-transition: 150ms;
+  transition: 150ms;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
 }
@@ -112,15 +138,64 @@ nav > ul li .nav_li_line.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  gap: 27px;
   letter-spacing: 3px;
 }
 
 .nav_chartBox .fa-magnifying-glass {
   font-size: 19px;
+  cursor: pointer;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.nav_chartBox .fa-magnifying-glass:hover {
+  color: #f34f3f;
 }
 
 .nav_chartBox .fa-bag-shopping {
+  cursor: pointer;
   font-size: 21px;
+}
+
+.chart_value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
+
+.nav_home {
+  position: relative;
+}
+
+.nav_home .nav_dropdown {
+  position: absolute;
+  background-color: gray;
+  top: 115px;
+  left: 0px;
+  width: 210px;
+  height: 400px;
+  visibility: hidden;
+}
+
+.nav_home:hover {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_home:hover .nav_dropdown {
+  visibility: visible;
 }
 /*# sourceMappingURL=main.css.map */
