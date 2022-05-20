@@ -177,12 +177,29 @@ nav > ul li .nav_li_line.active {
 
 .nav_home .nav_dropdown {
   position: absolute;
-  background-color: gray;
+  background-color: white;
+  text-align: start;
   top: 115px;
   left: 0px;
   width: 210px;
-  height: 400px;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
   visibility: hidden;
+}
+
+.nav_home .nav_dropdown ul {
+  cursor: default;
+}
+
+.nav_home .nav_dropdown li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 10px;
+  margin: 10px 0;
 }
 
 .nav_home:hover {
