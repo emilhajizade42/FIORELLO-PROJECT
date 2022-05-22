@@ -1,12 +1,16 @@
-
+*{
+    box-sizing: border-box;
+}
 a,ul{
     list-style: none;
     text-decoration: none;
-    width: 100%;
     color: black;
     padding: 0;
     margin: 0;
     &:hover{
         color: black;
     }
+}
+p{
+    margin: 0;
 }
