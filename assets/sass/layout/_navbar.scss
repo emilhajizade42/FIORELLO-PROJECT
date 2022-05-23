@@ -652,7 +652,7 @@ nav>ul{
 // responsive menu
 @media  screen  and (max-width:1200px) {
     .navContainer{
-        justify-content: space-around;
+        justify-content: space-between;
         nav{
             display: none;
         }

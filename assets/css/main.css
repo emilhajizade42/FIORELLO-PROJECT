@@ -911,8 +911,9 @@ nav > ul li .nav_li_line.active {
 
 @media screen and (max-width: 1200px) {
   .navContainer {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .navContainer nav {
     display: none;
