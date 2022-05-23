@@ -6,8 +6,8 @@ header {
 }
 .navContainer {
     height: 100%;
-    max-width: 1300px;
     width: 1300px;
+    max-width: 1300px;
     margin: 0 15px;
     display: flex;
     justify-content: space-between;
@@ -620,4 +620,20 @@ nav>ul{
          }
      }
 }
+}
+.nav_hamburger_icon{
+    display: none;
+}
+// responsive menu
+@media  screen  and (max-width:1200px) {
+    .navContainer{
+        justify-content: space-around;
+        nav{
+            display: none;
+        }
+        .nav_hamburger_icon{
+            display: block;
+            font-size: 24px;
+        }
+    }
 }

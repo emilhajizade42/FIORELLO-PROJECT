@@ -49,8 +49,8 @@ header {
 
 .navContainer {
   height: 100%;
-  max-width: 1300px;
   width: 1300px;
+  max-width: 1300px;
   margin: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -866,5 +866,23 @@ nav > ul li .nav_li_line.active {
 #nav_elements #nav_typography:hover #nav_typography_dropdown {
   opacity: 1;
   z-index: 2;
+}
+
+.nav_hamburger_icon {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .navContainer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .navContainer nav {
+    display: none;
+  }
+  .navContainer .nav_hamburger_icon {
+    display: block;
+    font-size: 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
